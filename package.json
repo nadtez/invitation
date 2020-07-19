@@ -1,0 +1,15 @@
+{
+  "name": "nadtez-wedding",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css/styles.css -o build/style.css"
+  },
+  "author": "Dhiyo7",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^9.8.5",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.6"
+  }
+}
