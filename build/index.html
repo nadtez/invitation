@@ -34,18 +34,18 @@
         <nav
           class="font-body md:ml-auto md:mr-auto flex flex-wrap items-center justify-center"
         >
-          <a class="mr-5 hover:text-gray-900 cursor-pointer">Home</a>
-          <a class="mr-5 hover:text-gray-900 cursor-pointer">Event</a>
-          <a class="mr-5 hover:text-gray-900 cursor-pointer">RSVP</a>
-          <a class="mr-5 hover:text-gray-900 cursor-pointer">Rundown</a>
-          <a class="mr-5 hover:text-gray-900 cursor-pointer">Gallery</a>
+          <a class="mr-5 hover:text-gray-900 cursor-pointer" href="#hero">Home</a>
+          <a class="mr-5 hover:text-gray-900 cursor-pointer" href="#event">Event</a>
+          <a class="mr-5 hover:text-gray-900 cursor-pointer" href="#rsvp">RSVP</a>
+          <a class="mr-5 hover:text-gray-900 cursor-pointer" href="#rundown">Rundown</a>
+          <a class="mr-5 hover:text-gray-900 cursor-pointer" href="#galery">Gallery</a>
         </nav>
       </div>
     </header>
     <!-- End Navbar -->
 
     <!-- Hero -->
-    <section class="text-black">
+    <section class="text-black" id="hero">
       <div
         class="container mx-auto flex px-5 py-16 items-center justify-center flex-col"
       >
@@ -89,7 +89,7 @@
     <!-- End Hero -->
 
     <!-- Detail Event -->
-    <section class="text-black">
+    <section class="text-black" id="event">
       <div class="container mx-auto flex px-5 py-16 items-center justify-center flex-col">
 
           <div
@@ -154,7 +154,7 @@
     <!-- END Detail Event -->
 
     <!-- RSVP -->
-    <section class="font-body text-black">
+    <section class="font-body text-black" id="rsvp">
       <div class="container mx-auto flex px-5 py-16 items-center justify-center flex-col">
         <div class="flex flex-col text-center w-full ">
           <h1
@@ -170,12 +170,15 @@
           </p>
         </div>
         <div class="lg:w-1/2 md:w-2/3 mx-auto">
+          <form name="submit-to-google-sheet">
           <div class="flex flex-wrap -m-2">
             <div class="p-2 w-full">
               <input
                 class="w-full rounded border border-black text-black focus:outline-none focus:border-gray-900 text-black px-4 py-2"
                 placeholder="Who are you"
                 type="text"
+                name= "name"
+                id= "name"
               />
             </div>
             <div class="p-2 w-full">
@@ -183,6 +186,8 @@
                 class="w-full rounded border border-black text-black focus:outline-none focus:border-gray-900 text-black px-4 py-2"
                 placeholder="Email"
                 type="email"
+                name= "email"
+                id="email"
               />
             </div>
             <div class="p-2 w-full">
@@ -190,18 +195,22 @@
                 class="w-full rounded border border-black text-black focus:outline-none focus:border-gray-900 text-black px-4 py-2"
                 placeholder="Phone number"
                 type="tel"
+                name="phone"
+                id="phone"
               />
             </div>
             <div class="p-2 w-full">
               <textarea
                 class="w-full rounded border border-black text-black focus:outline-none h-48 focus:border-gray-900 text-black px-4 py-2 resize-none block"
                 placeholder="Wishes for us"
+                name= "wishes"
+                id="wishes"
               ></textarea>
             </div>
             <div class="p-2 w-full">
               <button
                 class="font-body flex mx-auto text-white bg-regal-blue border-0 py-2 px-8 focus:outline-none hover:bg-gray-600 rounded text-lg mt-4"
-              >
+              type="submit">
                 Send
               </button>
             </div>
@@ -217,13 +226,14 @@
                 </p>
             </div>
           </div>
+        </form>
         </div>
       </div>
     </section>
     <!-- End RSVP -->
 
     <!-- Rundown -->
-    <section class="font-body text-black">
+    <section class="font-body text-black" id="rundown">
       <div class="container mx-auto flex px-5 py-16 items-center justify-center flex-col">
         <div class="flex flex-col text-center w-full mb-10">
           <h1
@@ -352,7 +362,7 @@
 
 
     <!-- Galery -->
-    <section class="font-body bodytext-black bg-regal-blue">
+    <section class="font-body bodytext-black bg-regal-blue" id="galery">
       <div class="container mx-auto flex px-5 py-16 items-center justify-center flex-col">
         <div class="flex flex-col text-center w-full mb-12">
           <h1
@@ -481,6 +491,30 @@
     }
       // End Modal 2
 
+
+      // Scritpt Form Spreadsheets
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyf7CpNu1CtIsKiB6Algzw42nJkaOdpVUdyTYvia_n0aaCW9acp/exec'
+      const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', mode:'no-cors', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .then(clear())
+            .catch(error => console.error('Error!', error.message))
+        })
+      // End Scritpt Form Spreadsheets
+
+      // function reload(){
+      //   window.location.reload(7000);
+      // }
+
+      function clear() {
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('phone').value = '';
+        document.getElementById('wishes').value = '';
+      }
 
     </script>
   </body>
