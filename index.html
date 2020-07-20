@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styless.css" />
+  <link rel="stylesheet" href="styles.css" />
   <title class="font-myfontfix">NadTez Invitation Wedding</title>
 </head>
 
 <body>
   <!-- Navbar -->
   <header class="font-body tracking-wide text-black">
-    <div class="mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center fixed w-full bg-white" id="header-shadow">
+    <div class="mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-center fixed w-full bg-white" id="header-shadow">
       <!-- <a
           class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
         >
@@ -31,7 +31,7 @@
           </svg>
           <span class="ml-3 text-xl">tailblocks</span>
         </a> -->
-      <nav class="font-body sm:grid-cols-5 md:ml-auto md:mr-auto items-center justify-center">
+      <nav class="font-body tracking-wider md:ml-auto md:mr-auto flex flex-wrap items-center justify-center">
         <a class="mr-5 hover:text-gray-900 cursor-pointer" href="#hero">Home</a>
         <a class="mr-5 hover:text-gray-900 cursor-pointer" href="#event">Event</a>
         <a class="mr-5 hover:text-gray-900 cursor-pointer" href="#rsvp">RSVP</a>
@@ -44,7 +44,7 @@
 
   <!-- Hero -->
   <section class="text-black" id="hero">
-    <div class="container mx-auto flex px-5 py-32 items-center justify-center flex-col">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
       <img class="lg:w-5/6 md:w-2/4 w-full mb-10 object-cover object-center rounded" alt="hero"
         src="https://raw.githubusercontent.com/nadtez/invitation/master/assets/new/Pengantin%20Cowo%20%26%20Cewefix.png" />
 
@@ -62,11 +62,11 @@
   <!-- End Hero -->
 
   <!-- Detail Event -->
-  <section class="text-black" id="event">
+  <section class="font-bodybold text-black" id="event">
     <div class="container mx-auto flex px-5 py-16 items-center justify-center flex-col">
 
       <div class="items-center text-center">
-        <h1 class="tracking-widest font-bodybold sm:text-3xl text-2xl text-black justify-center">EVENT
+        <h1 class="tracking-widest sm:text-3xl text-2xl text-black justify-center">EVENT
         </h1>
         <div class="container mx-auto flex px-5 py-20 items-center justify-center flex-col">
           <img class="lg:w-1/2 md:w-2/3 mx-auto w-auto object-cover object-center" alt="hero"
@@ -117,74 +117,85 @@
   </section>
   <!-- END Detail Event -->
 
-  <!-- RSVP -->
-  <section class="font-body text-black" id="rsvp">
-    <div class="container mx-auto flex px-5 py-16 items-center justify-center flex-col">
-      <div class="flex flex-col text-center w-full ">
-        <h1 class="tracking-widest font-bodybold sm:text-3xl text-2xl title-font text-black justify-center">
-          RSVP
-        </h1>
-        <div class="container mx-auto flex px-5 py-10 items-center justify-center flex-col">
-          <img class="lg:w-1/2 md:w-2/3 mx-auto w-auto object-cover object-center"
-            src="https://raw.githubusercontent.com/dhiyo7/Landing-Page-TailwindCSS/master/assets/FORM%20(1).png">
-          <div class="text-center lg:w-2/3 w-full">
-            <p class="font-body lg:w-2/3 mx-auto leading-relaxed text-base">
-              <h1
-                class="font-bodybold tracking-wider sm:text-2xl text-2xl font-medium title-font text-black justify-center mt-6 mb-8">
-                ARE YOU ATTENDING?</h1>
-            </p>
-          </div>
-          <div class="lg:w-1/2 md:w-2/3 mx-auto">
-            <form name="submit-to-google-sheet">
-              <div class="flex flex-wrap -m-2">
-                <div class="p-2 w-full">
-                  <input
-                    class="w-full rounded border border-black text-black focus:outline-none focus:border-gray-900 text-black px-4 py-2"
-                    placeholder="Who are you" type="text" name="name" id="name" />
-                </div>
-                <div class="p-2 w-full">
-                  <input
-                    class="w-full rounded border border-black text-black focus:outline-none focus:border-gray-900 text-black px-4 py-2"
-                    placeholder="Email" type="email" name="email" id="email" />
-                </div>
-                <div class="p-2 w-full">
-                  <input
-                    class="w-full rounded border border-black text-black focus:outline-none focus:border-gray-900 text-black px-4 py-2"
-                    placeholder="Phone number" type="tel" name="phone" id="phone" />
-                </div>
-                <div class="p-2 w-full">
-                  <textarea
-                    class="w-full rounded border border-black text-black focus:outline-none h-48 focus:border-gray-900 text-black px-4 py-2 resize-none block"
-                    placeholder="Wishes for us" name="wishes" id="wishes"></textarea>
-                </div>
-                <div class="p-2 w-full">
-                  <button
-                    class="font-body flex mx-auto text-white bg-regal-blue border-0 py-2 px-8 focus:outline-none hover:bg-gray-600 rounded text-lg mt-4"
-                    type="submit">
-                    Send
-                  </button>
-                </div>
-                <div class="font-body flex flex-col text-center w-full mt-4">
-                  <p class="lg:w-2/3 mx-auto leading-relaxed flex flex-col text-center w-full mt-6  ">
-                    <p class="tracking-wide">Zoom Link :</p>
-                    <p class="text-md tracking-wide text-black">
-                      <a href="https://us02web.zoom.us/j/82451529325?pwd=aXovM0RmbFp2V2o1OEFQakxiZUpBdz09"
-                        class="text-regal-blue ml-1" target="_blank" rel="noopener noreferrer"><b
-                          class="font-bodybold">https://us02web.zoom.us/j/82451529325?pwd=aXovM0RmbFp2V2o1OEFQakxiZUpBdz09</b></a>
-                    </p>
-                    <p class="tracking-wide mt-4">the ID and password to the event </p>
-                    <p class="tracking-wide"> will be sent to
-                      your email AFTER you've registered.</p>
-                  </p>
-                </div>
+    <!-- RSVP -->
+    <section class="font-bodybold text-black " id="rsvp">
+      <div class="container mx-auto flex px-5 py-16 items-center justify-center flex-col">
+        <div class="flex flex-col text-center w-full ">
+          <h1
+            class="tracking-widest sm:text-3xl text-2xl font-medium title-font text-black justify-center"
+          >
+            RSVP
+          </h1>
+          <div class="container mx-auto flex px-5 py-10 items-center justify-center flex-col">
+            <img class="lg:w-1/2 md:w-2/3 mx-auto w-auto object-cover object-center" src="https://raw.githubusercontent.com/dhiyo7/Landing-Page-TailwindCSS/master/assets/FORM%20(1).png">
+            <div class="text-center lg:w-2/3 w-full">
+          <p class="font-bodybold lg:w-2/3 mx-auto leading-relaxed text-base">
+            <h1 class="tracking-wide sm:text-3xl text-2xl font-medium title-font text-black justify-center mt-8 mb-8">ARE YOU ATTENDING?</h1>
+          </p>
+        </div>
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+          <form name="submit-to-google-sheet">
+          <div class="flex flex-wrap -m-2">
+
+              <div class="p-2 w-full">
+                <input
+                  class="w-full rounded border border-black text-black focus:outline-none focus:border-gray-900 text-black px-4 py-2"
+                  placeholder="Who are you"
+                  type="text"
+                  name="name"
+                  id="name"
+                />
               </div>
-            </form>
+              <div class="p-2 w-full">
+                <input
+                  class="w-full rounded border border-black text-black focus:outline-none focus:border-gray-900 text-black px-4 py-2"
+                  placeholder="Email"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+              </div>
+              <div class="p-2 w-full">
+                <input
+                  class="w-full rounded border border-black text-black focus:outline-none focus:border-gray-900 text-black px-4 py-2"
+                  placeholder="Phone number"
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                />
+              </div>
+              <div class="p-2 w-full">
+                <textarea
+                  class="w-full rounded border border-black text-black focus:outline-none h-48 focus:border-gray-900 text-black px-4 py-2 resize-none block"
+                  placeholder="Wishes for us"
+                  name="wishes"
+                  id="wishes"
+                ></textarea>
+              </div>
+              <div class="p-2 w-full">
+                <button
+                  class="font-body flex mx-auto text-white bg-regal-blue border-0 py-2 px-8 focus:outline-none hover:bg-gray-600 rounded text-lg mt-4"
+                  type="submit"
+                >
+                  Send
+                </button>
+              </div>
+            <div class="font-body flex flex-col text-center w-full mt-4">
+                <p class="lg:w-2/3 mx-auto leading-relaxed flex flex-col text-center w-full mt-6  ">
+                  <pc>Zoom Link :</pc>
+                  <p class="text-md text-black">
+                    <a href="#" class="text-regal-blue ml-1" target="_blank" rel="noopener noreferrer">Link Zoom</a>
+                  </p>
+                  <p>the ID and password to the event will be sent to
+                    your email AFTER you've registered</p>
+                </p>
+            </div>
           </div>
+        </form>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- End RSVP -->
+    </section>
+    <!-- End RSVP -->
 
   <!-- Rundown -->
   <section class="font-body text-black" id="rundown">
@@ -492,6 +503,14 @@
       document.getElementById('phone').value = '';
       document.getElementById('wishes').value = '';
     }
+
+    window.addEventListener('scroll', function() {
+      var headerShadow = document.getElementById('header-shadow');
+      headerShadow.classList.add('shadow-md')
+      if(this.pageYOffset == 0){
+        headerShadow.classList.remove('shadow-md')
+      }
+    })
   </script>
 </body>
 

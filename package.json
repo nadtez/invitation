@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "postcss css/styles.css -o style.css",
+    "build": "postcss css/styles.css -o styles.css",
     "heroku-postbuild": "npm run build"
   },
   "author": "Dhiyo7",
