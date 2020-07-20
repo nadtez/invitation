@@ -11,32 +11,14 @@
 <body>
   <!-- Navbar -->
   <header class="font-body tracking-wide text-black">
-    <div class="mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-center fixed w-full bg-white" id="header-shadow">
-      <!-- <a
-          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-            ></path>
-          </svg>
-          <span class="ml-3 text-xl">tailblocks</span>
-        </a> -->
+    <div class="mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-center fixed w-full bg-white"
+      id="header-shadow">
       <nav class="font-body tracking-wider md:ml-auto md:mr-auto flex flex-wrap items-center justify-center">
-        <a class="mr-5 hover:text-gray-900 cursor-pointer" href="#hero">Home</a>
-        <a class="mr-5 hover:text-gray-900 cursor-pointer" href="#event">Event</a>
-        <a class="mr-5 hover:text-gray-900 cursor-pointer" href="#rsvp">RSVP</a>
-        <a class="mr-5 hover:text-gray-900 cursor-pointer" href="#rundown">Rundown</a>
-        <a class="mr-5 hover:text-gray-900 cursor-pointer" href="#galery">Gallery</a>
+        <a class="mr-1 md:mr-5 hover:text-gray-900 cursor-pointer" href="#hero">Home</a>
+        <a class="mr-1 md:mr-5 hover:text-gray-900 cursor-pointer" href="#event">Event</a>
+        <a class="mr-1 md:mr-5 hover:text-gray-900 cursor-pointer" href="#rsvp">RSVP</a>
+        <a class="mr-1 md:mr-5 hover:text-gray-900 cursor-pointer" href="#rundown">Rundown</a>
+        <a class="mr-1 md:mr-5 hover:text-gray-900 cursor-pointer" href="#galery">Gallery</a>
       </nav>
     </div>
   </header>
@@ -117,85 +99,69 @@
   </section>
   <!-- END Detail Event -->
 
-    <!-- RSVP -->
-    <section class="font-bodybold text-black " id="rsvp">
-      <div class="container mx-auto flex px-5 py-16 items-center justify-center flex-col">
-        <div class="flex flex-col text-center w-full ">
-          <h1
-            class="tracking-widest sm:text-3xl text-2xl font-medium title-font text-black justify-center"
-          >
-            RSVP
-          </h1>
-          <div class="container mx-auto flex px-5 py-10 items-center justify-center flex-col">
-            <img class="lg:w-1/2 md:w-2/3 mx-auto w-auto object-cover object-center" src="https://raw.githubusercontent.com/dhiyo7/Landing-Page-TailwindCSS/master/assets/FORM%20(1).png">
-            <div class="text-center lg:w-2/3 w-full">
-          <p class="font-bodybold lg:w-2/3 mx-auto leading-relaxed text-base">
-            <h1 class="tracking-wide sm:text-3xl text-2xl font-medium title-font text-black justify-center mt-8 mb-8">ARE YOU ATTENDING?</h1>
-          </p>
-        </div>
-        <div class="lg:w-1/2 md:w-2/3 mx-auto">
-          <form name="submit-to-google-sheet">
-          <div class="flex flex-wrap -m-2">
-
-              <div class="p-2 w-full">
-                <input
-                  class="w-full rounded border border-black text-black focus:outline-none focus:border-gray-900 text-black px-4 py-2"
-                  placeholder="Who are you"
-                  type="text"
-                  name="name"
-                  id="name"
-                />
-              </div>
-              <div class="p-2 w-full">
-                <input
-                  class="w-full rounded border border-black text-black focus:outline-none focus:border-gray-900 text-black px-4 py-2"
-                  placeholder="Email"
-                  type="email"
-                  name="email"
-                  id="email"
-                />
-              </div>
-              <div class="p-2 w-full">
-                <input
-                  class="w-full rounded border border-black text-black focus:outline-none focus:border-gray-900 text-black px-4 py-2"
-                  placeholder="Phone number"
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                />
-              </div>
-              <div class="p-2 w-full">
-                <textarea
-                  class="w-full rounded border border-black text-black focus:outline-none h-48 focus:border-gray-900 text-black px-4 py-2 resize-none block"
-                  placeholder="Wishes for us"
-                  name="wishes"
-                  id="wishes"
-                ></textarea>
-              </div>
-              <div class="p-2 w-full">
-                <button
-                  class="font-body flex mx-auto text-white bg-regal-blue border-0 py-2 px-8 focus:outline-none hover:bg-gray-600 rounded text-lg mt-4"
-                  type="submit"
-                >
-                  Send
-                </button>
-              </div>
-            <div class="font-body flex flex-col text-center w-full mt-4">
-                <p class="lg:w-2/3 mx-auto leading-relaxed flex flex-col text-center w-full mt-6  ">
-                  <pc>Zoom Link :</pc>
-                  <p class="text-md text-black">
-                    <a href="#" class="text-regal-blue ml-1" target="_blank" rel="noopener noreferrer">Link Zoom</a>
-                  </p>
-                  <p>the ID and password to the event will be sent to
-                    your email AFTER you've registered</p>
-                </p>
-            </div>
+  <!-- RSVP -->
+  <section class="text-black " id="rsvp">
+    <div class="container mx-auto flex px-5 py-16 items-center justify-center flex-col">
+      <div class="flex flex-col text-center w-full ">
+        <h1 class="font-bodybold tracking-widest sm:text-3xl text-2xl font-medium title-font text-black justify-center">
+          RSVP
+        </h1>
+        <div class="container mx-auto flex px-5 py-10 items-center justify-center flex-col">
+          <img class="lg:w-1/2 md:w-2/3 mx-auto w-auto object-cover object-center"
+            src="https://raw.githubusercontent.com/dhiyo7/Landing-Page-TailwindCSS/master/assets/FORM%20(1).png">
+          <div class="text-center lg:w-2/3 w-full">
+            <p class="font-bodybold lg:w-2/3 mx-auto leading-relaxed text-base">
+              <h1 class="tracking-wide sm:text-3xl text-2xl font-medium title-font text-black justify-center mt-8 mb-8">
+                ARE YOU ATTENDING?</h1>
+            </p>
           </div>
-        </form>
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <form name="submit-to-google-sheet">
+              <div class="flex flex-wrap -m-2">
+
+                <div class="p-2 w-full">
+                  <input
+                    class="w-full rounded border border-black text-black focus:outline-none focus:border-gray-900 text-black px-4 py-2"
+                    placeholder="Who are you" type="text" name="name" id="name" />
+                </div>
+                <div class="p-2 w-full">
+                  <input
+                    class="w-full rounded border border-black text-black focus:outline-none focus:border-gray-900 text-black px-4 py-2"
+                    placeholder="Email" type="email" name="email" id="email" />
+                </div>
+                <div class="p-2 w-full">
+                  <input
+                    class="w-full rounded border border-black text-black focus:outline-none focus:border-gray-900 text-black px-4 py-2"
+                    placeholder="Phone number" type="tel" name="phone" id="phone" />
+                </div>
+                <div class="p-2 w-full">
+                  <textarea
+                    class="w-full rounded border border-black text-black focus:outline-none h-48 focus:border-gray-900 text-black px-4 py-2 resize-none block"
+                    placeholder="Wishes for us" name="wishes" id="wishes"></textarea>
+                </div>
+                <div class="p-2 w-full">
+                  <button
+                    class="font-body flex mx-auto text-white bg-regal-blue border-0 py-2 px-8 focus:outline-none hover:bg-gray-600 rounded text-lg mt-4"
+                    type="submit">
+                    Send
+                  </button>
+                </div>
+                <div class="flex flex-col text-center w-full mt-4">
+                  <p class="lg:w-2/3 mx-auto leading-relaxed flex flex-col text-center w-full mt-6  ">
+                    <p class="font-bodybold tracking-wide">Zoom Link :</p>
+                    <p class="font-bodybold tracking-wide items-center justify-center">
+                      <a href="https://us02web.zoom.us/j/82451529325?pwd=aXovM0RmbFp2V2o1OEFQakxiZUpBdz09" class="text-regal-blue ml-1" target="_blank">Click Here</a>
+                    </p>
+                    <p class="font-body tracking-wide">the ID and password to the event will be sent to
+                      your email AFTER you've registered</p>
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- End RSVP -->
+  </section>
+  <!-- End RSVP -->
 
   <!-- Rundown -->
   <section class="font-body text-black" id="rundown">
@@ -326,13 +292,6 @@
         <p class="font-body tracking-wide">We will catch up with each of you and just like a regular wedding, there will
           be a photoshoot!</p>
         <p>...</p>
-
-        <!--Footer-->
-        <!-- <div class="flex justify-end pt-2">
-            <button class="px-4 bg-transparent p-3 rounded-lg text-indigo-500 hover:bg-gray-100 hover:text-indigo-400 mr-2">Action</button>
-            <button class="modal-close px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Close</button>
-          </div> -->
-
       </div>
     </div>
   </div>
@@ -504,10 +463,10 @@
       document.getElementById('wishes').value = '';
     }
 
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
       var headerShadow = document.getElementById('header-shadow');
       headerShadow.classList.add('shadow-md')
-      if(this.pageYOffset == 0){
+      if (this.pageYOffset == 0) {
         headerShadow.classList.remove('shadow-md')
       }
     })
